@@ -1,7 +1,7 @@
 # Verifying contracts with Hardhat verify
 
 _This tutorial includes items from the Hardhat [getting started docs](https://hardhat.org/getting-started/)_<br>
-_Inspired by [Hardhat Etherscan docs](https://www.npmjs.com/package/@nomiclabs/hardhat-etherscan)_
+_Inspired by [Hardhat Etherscan docs](https://github.com/nomiclabs/hardhat/tree/master/packages/hardhat-etherscan)_
 
 
 
