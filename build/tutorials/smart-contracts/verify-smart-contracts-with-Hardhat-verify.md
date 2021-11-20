@@ -1,7 +1,7 @@
 # Verifying contracts with Hardhat verify
 
-_This tutorial includes items from the Hardhat [quickstart docs](https://www.Hardhatsuite.com/docs/Hardhat/quickstart)_<br>
-_Inspired by [Hardhat verify docs](https://www.npmjs.com/package/Hardhat-plugin-verify)_
+_This tutorial includes items from the Hardhat [getting started docs](https://hardhat.org/getting-started/)_<br>
+_Inspired by [Hardhat Etherscan docs](https://www.npmjs.com/package/@nomiclabs/hardhat-etherscan)_
 
 
 
@@ -145,7 +145,7 @@ Once this operation is completed, your ``./artifacts/contracts`` folder should c
 * ``Greeter.json`` <br>
 * ``console.json``<br>
 
-### Migrate
+### Deploy
 
 Run the following command:
 ```zsh
@@ -153,7 +153,9 @@ npx hardhat run scripts/sample-script.js --network fuji
 ```
 <br>
 
-You should see the txn activity in your terminal
+You should see the txn activity in your terminal<br>
+![Screen Shot 2021-11-19 at 3 45 40 PM](https://user-images.githubusercontent.com/73849597/142705331-1fd17fda-0361-4ba4-a6c9-6b2c7b1fb174.png)
+
 
 <br>
 
@@ -161,25 +163,26 @@ You should see the txn activity in your terminal
 
 Hardhat verify allows users to verify contracts from the CLI
 
-Take a look at the Fuji Testnet Explorer [here](https://testnet.snowtrace.io/) and read more about Hardhat verify [here](https://github.com/rkalis/Hardhat-plugin-verify)
+Take a look at the Fuji Testnet Explorer [here](https://testnet.snowtrace.io/) and read more about Hardhat verify [here](https://github.com/nomiclabs/hardhat/tree/master/packages/hardhat-etherscan)
 
 If you have issues, contact us on [Discord](https://chat.avalabs.org)
 
 ## Steps
 1. Run the following command:
 ```zsh
- npx hardhat verify <contract-address> --network fuji <constructor-arguments>
+ npx hardhat verify <contract-address> <constructor-arguments> --network fuji 
 ```
 <br>
 
 2. Wait for the verification message from the CLI
-<img width="867" alt="Screen Shot 2021-11-19 at 1 18 47 PM" src="https://user-images.githubusercontent.com/73849597/142695700-cdcfb290-d8a7-49f3-bae7-33ef38e604fe.png">
+![Screen Shot 2021-11-19 at 3 44 38 PM](https://user-images.githubusercontent.com/73849597/142705578-8487b5c5-0653-490d-a388-28fccefe3e78.png)
+
+
 
 <br>
 
 7. View the verified [contract](https://testnet.snowtrace.io/address/0x509c7810ab0EF53eF052B2a971b49A3768E1331F#code) <br>
-<img width="1384" alt="step5" src="https://user-images.githubusercontent.com/73849597/142696234-99cb457e-3b52-4566-8868-a078e54465e7.png">
-<br>
+<img width="1387" alt="Screen Shot 2021-11-19 at 3 57 35 PM" src="https://user-images.githubusercontent.com/73849597/142705413-8525dab8-393c-4a54-95b5-7141e568e86f.png">
 
 ## Mainnet deployment
 
