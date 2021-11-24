@@ -22,19 +22,6 @@ cd Greeter
 ```
 <br>
 
-Initialize the project:
-```
-hardhat init
-```
-<br>
-
-Once this operation is completed, you'll now have a project structure with the following items:
-
-* ``contracts/``: Directory for Solidity contracts<br>
-* ``scripts/``: Directory for scriptable deployment files<br>
-* ``test/``: Directory for test files for testing your application and contracts<br>
-* ``hardhat.config.js``: Hardhat configuration file
-
 ## Compiling
 Before we compile our smart contract, we must set up our environment
 
@@ -47,9 +34,21 @@ npm init -y
 ```
 <br>
 
+```
+hardhat init
+```
+<br>
+
 Choose yes when asked : Do you want to install this sample project's dependencies with npm? <br>
 or run the following command:
 <br>
+
+Once this operation is completed, you'll now have a project structure with the following items:
+
+* ``contracts/``: Directory for Solidity contracts<br>
+* ``scripts/``: Directory for scriptable deployment files<br>
+* ``test/``: Directory for test files for testing your application and contracts<br>
+* ``hardhat.config.js``: Hardhat configuration file<br>
 
 ```zsh 
 yarn add --dev hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers @nomiclabs/hardhat-etherscan ethers
