@@ -37,7 +37,8 @@ create_config_file () {
   else
     echo "  \"public-ip\": \"$foundIP\",">>node.json
   fi
-  echo "  \"http-host\": \"\"">>node.json
+  echo "  \"http-host\": \"\",">>node.json
+  echo "  \"network-id\": \"fuji\"">>node.json
   echo "}" >>node.json
   mkdir -p $HOME/.avalanchego/configs
   cp -f node.json $HOME/.avalanchego/configs/node.json
@@ -221,7 +222,7 @@ sudo systemctl enable avalanchego
 echo
 echo "Done!"
 echo
-echo "Your node should now be bootstrapping on the main net."
+echo "Your node should now be bootstrapping on the fuji test net."
 echo "Node configuration file is $HOME/.avalanchego/configs/node.json"
 echo "To check that the service is running use the following command (q to exit):"
 echo "sudo systemctl status avalanchego"
